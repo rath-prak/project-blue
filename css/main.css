@@ -90,21 +90,6 @@ body {
 
 /* ===== logo ===== */
 
-#logo {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.logo-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .filler-text {
   color:  #fff;
@@ -114,13 +99,9 @@ body {
 
 /* ===== slides ===== */
 
-/*.slide {
-  height: 100vh;
-  text-align: center;
-}*/
 
 
-#slide00 {
+#slide01 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -132,7 +113,7 @@ body {
   left:0;
 }
 
-#slide01 {
+#slide02 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -145,7 +126,7 @@ body {
   left:0;
 }
 
-#slide02 {
+#slide03 {
   position: absolute;
   height: 100%;
   width: 100%;
