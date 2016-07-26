@@ -11,7 +11,7 @@ textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
-    background: #2b2769;
+    /*background: #2b2769;*/
 }
 
 ::-moz-selection {
@@ -85,65 +85,32 @@ body {
   background: #ff5ea8;
 }
 
+/* ===== shame ===== */
 
+h3 {
+  margin-top: 0;
+}
 
 
 /* ===== logo ===== */
-
-
-.filler-text {
-  color:  #fff;
-}
-
 
 
 /* ===== slides ===== */
 
 
 
-#slide01 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #2b2769;
-  z-index: -1;
-  margin-top: 0;
-  /*transform: translateX(-50%);*/
-  top: 0;
-  left:0;
+/*.fake-height {
+  height: 400%;
 }
 
-#slide02 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #33b2ff;
-  z-index: -1;
-  margin-top: 0;
-/*  transform: translateX(-50%);*/
-  opacity: 0;
-  top: 0;
-  left:0;
-}
-
-#slide03 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #ff5ea8;
-  z-index: 110;
-  margin-top: 0;
-  transform: translateX(-75%);
-}
-
-.slide h3{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
+.main-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+  }
+*/
 
 /* ===== color styles ===== */
 
@@ -165,6 +132,63 @@ body {
 }
 
 @media only screen and (min-width: 1140px) {
+
+  .slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+  }
+
+  .active {
+    visibility: visible;
+  }
+
+  #slide01 { background: #2b2769; opacity: .5}
+  #slide02 { background: #33b2ff; opacity: .5}
+  #slide03 { background: #ff5ea8; opacity: .5}
+  #slide04 { background: #8F95FF; opacity: .5}
+
+  .primary-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  }
+
+  /* ===== nav ===== */
+
+  .nav-container {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    z-index: 110;
+    height: 200px;
+    transform: translate(0, -50%);
+  }
+
+  .nav-items li {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .nav-items li a {
+/*    width: 100%;
+    height: 100%;
+    display: block;*/
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+
+  }
+
+  .nav-items .active a {
+    font-size: 16px;
+  }
 
 }
 
