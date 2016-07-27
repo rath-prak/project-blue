@@ -66,10 +66,9 @@ body {
   font: 16px/1.5 'sans-serif', Helvetica, Helvetica Neue, Arial, sans-serif; 
 }
 
-html, 
-body {
-  height: 100%;
-}
+
+
+
 
 /* ==========================================================================
    Author's custom styles
@@ -94,6 +93,14 @@ body {
 h3 {
   margin-top: 0;
 }
+
+html, 
+body {
+  height: 100%;
+  /*background: blue;*/
+}
+
+
 
 
 /* ===== logo ===== */
@@ -134,9 +141,11 @@ h3 {
 @media only screen and (min-width: 1140px) {
 
   .slide {
-/*    position: absolute;*/
+    position: relative;
     height: 100vh;
-    width: 100%;
+    width: 96%;
+    margin: 1.5%;
+    /*box-sizing: border-box;*/
 /*    top: 0;
     left: 0;*/
     /*visibility: hidden;*/
